@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fjalla+One"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4125c79c74.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>MODO BESTIA - Whey Protein</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <span id="aHome"
+          ><img id="modo-bestia" src="./assets/logo.png" alt="Logo"
+        /></span>
+        <ul>
+          <li>
+            <span id="aSec1">
+              <strong>Proteína</strong>
+            </span>
+          </li>
+          <li>
+            <span id="aSec2">
+              <strong>Nosotros</strong>
+            </span>
+          </li>
+          <li>
+            <span id="aSec3">
+              <strong>Contacto</strong>
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <span id="scrollingBtn" class="floating-btn"
+        ><i id="flechita" class="fas fa-arrow-down fa-lg"></i
+      ></span>
+      <section id="home" class="landing">
+        <div class="dark-overlay">
+          <div class="landing-inner"></div>
+        </div>
+      </section>
+      <section id="sec1" class="section1">
+        <section id="tarro" style="display: flex; justify-content: center;">
+          <img src="./assets/tarron.png" alt="Tarro" />
+        </section>
+        <section id="textoSec1">
+          <h2>Nuestra Proteína</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            natus officia officiis dolor quia nesciunt magnam voluptatem, veniam
+            facere ab assumenda corrupti cumque. Assumenda, cupiditate.
+            Doloribus, delectus voluptate perferendis rerum maxime aut
+            reiciendis porro animi id non atque enim. Tenetur magnam
+            consequuntur nobis aliquam soluta. Quae ad ipsum omnis nobis,
+            consequuntur commodi impedit delectus cupiditate magni, quod
+            provident illo error nemo sapiente repellendus rerum quasi molestiae
+            adipisci minus! Maiores aut qui placeat recusandae alias corrupti ea
+            mollitia quae, temporibus accusamus at eius sed deserunt dicta saepe
+            omnis ratione quis optio, officia tempore minima natus quos dolores.
+            Nisi consequatur neque tenetur.
+          </p>
+        </section>
+      </section>
+
+      <section id="sec2" class="section2">
+        <h2>Nosotros</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+          corporis earum alias at suscipit modi ipsa nostrum delectus distinctio
+          repellat itaque quae laboriosam non cumque voluptas ab officia
+          sapiente doloremque laudantium? Eaque a rerum totam voluptatem quaerat
+          dicta earum, velit perspiciatis culpa ex eum vitae esse ab. Libero,
+          eum possimus. Quis odit temporibus ipsam laudantium, reprehenderit
+          debitis animi eum sed voluptatum obcaecati eius asperiores dolore
+          voluptates fugit harum magnam laboriosam ratione! Aperiam atque,
+          exercitationem voluptates adipisci natus excepturi necessitatibus,
+          consequuntur aliquid, omnis provident veniam accusamus eos consequatur
+          facere iusto pariatur quibusdam quo doloribus sint deleniti eveniet
+          ipsam. Eligendi, nostrum in?
+        </p>
+      </section>
+
+      <section id="sec3" class="section3">
+        <section id="sub-sec1">
+          <h2>Contactanos</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            nulla eum quaerat reprehenderit labore veniam quis debitis repellat?
+            Nisi obcaecati, unde delectus voluptas iure recusandae deserunt
+            similique debitis earum iusto veniam rem adipisci numquam optio
+            soluta reprehenderit voluptate harum amet?
+          </p>
+        </section>
+        <section id="sub-sec2">
+          <form class="form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="*Nombre"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="*Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="*mensaje..."
+                rows="6"
+                style="resize: none;"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <input
+                type="button"
+                value="Enviar"
+                style="background-color: #ffcc33; cursor: pointer"
+                onclick="getData(document.getElementById('name'), document.getElementById('email'), document.getElementById('mensaje'))"
+              />
+            </div>
+          </form>
+          <hr class="my-1" style="border: 1px solid white;" />
+          <section style="display: flex; justify-content: flex-end;">
+            <p style="margin-right: 5px;">Escribinos por whatsapp</p>
+            <a
+              href="https://wa.me/543498406789"
+              style="text-decoration: none; color: #ffcc33;"
+            >
+              <i class="fab fa-whatsapp fa-lg"></i>
+            </a>
+          </section>
+        </section>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
