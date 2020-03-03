@@ -272,6 +272,11 @@ a {
     display: none;
   }
 
+  .landing {
+    background: url("./assets/FondoPaginaMovil.png") no-repeat center
+      center/cover;
+  }
+
   .section1 {
     width: 85%;
     margin: auto;
