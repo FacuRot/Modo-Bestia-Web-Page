@@ -1,3 +1,3 @@
 module.exports = {
-  sendGridApiKey: // api key
+  sendGridApiKey:  process.env.SENDGRID_KEY
 };
